@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: timeregistration-service
+  profiles:
+    active: local
+  cloud:
+    config:
+      name: ${spring.application.name}
+      uri: http://configrepo01:8888, http:/configrepo02:8888, http://configrepo03:8888

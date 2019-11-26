@@ -1,0 +1,23 @@
+# Local unittest configuration
+spring:
+  datasource:
+    jdbcUrl: "jdbc:h2:mem:timeregistration"
+    driver-class-name: "org.h2.Driver"
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  cloud:
+    config:
+      allow-override: true
+      override-system-properties: false
+
+amq-timeregistration-service: "dk.rr.services.timeregistrationservice"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

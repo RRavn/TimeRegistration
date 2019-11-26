@@ -1,0 +1,133 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: rr
+      changes:
+        - createTable:
+            tableName: Department
+            columns:
+              - column:
+                  name: Id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: Name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+        - createTable:
+            tableName: TimeCategory
+            columns:
+              - column:
+                  name: Id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: Name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+        - createTable:
+            tableName: CoWorker
+            columns:
+              - column:
+                  name: Id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_coworker
+              - column:
+                  name: Name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: Department_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_coworker_department
+                    references: Department(Id)
+        - createTable:
+            tableName: Registration
+            columns:
+              - column:
+                  name: Id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: Arrivetime
+                  type: DATETIME
+                  constraints:
+                    nullable: false
+              - column:
+                  name: Leavetime
+                  type: DATETIME
+                  constraints:
+                    nullable: false
+              - column:
+                  name: TimeCategory_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_registration_timecategory
+                    references: TimeCategory(Id)
+              - column:
+                  name: CoWorker_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk_registration_coworker
+                    references: CoWorker(Id)
+        - createTable:
+            tableName: CoWorkerProperties
+            columns:
+              - column:
+                  name: Id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: Fixedarrivetime
+                  type: DATETIME
+                  constraints:
+                    nullable: false
+              - column:
+                  name: Fixedleavetime
+                  type: DATETIME
+                  constraints:
+                    nullable: false
+              - column:
+                  name: Fixedtimemin
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: Fixedtimemax
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: Overtimerate
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: CoWorker_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+                    foreignKeyName: fk__coworkerproperties_coworker
+                    references: CoWorker(Id)

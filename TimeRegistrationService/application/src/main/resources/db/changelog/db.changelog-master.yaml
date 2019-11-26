@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - preConditions:
+    - runningAs:
+        username: sa
+  - include:
+      file: /db/changelog/versions/db.changelog-1.0.yaml
+  - include:
+      file: /db/changelog/versions/db.changelog-1.1.yaml
+  - include:
+      file: /db/changelog/versions/db.changelog-1.2.yaml

@@ -1,0 +1,29 @@
+# Local development configuration
+spring:
+  datasource:
+    url: "jdbc:sqlserver://172.17.0.1:1433;databaseName=timeregistration"
+    driver-class-name: "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+    username: "sa"
+    password: "passW0rd"
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  cloud:
+    config:
+      allow-override: true
+      override-system-properties: false
+  activemq:
+    broker-url: "tcp://172.17.0.1:61616"
+    user: "admin"
+    password: "admin"
+    
+amq-timeregistration-service: "dk.rr.services.timeregistrationservice"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

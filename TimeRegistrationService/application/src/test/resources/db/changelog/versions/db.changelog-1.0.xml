@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<databaseChangeLog 
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/3.8
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd"> 
+
+    <changeSet id="changelog-1.0" author="rr">
+        <createTable tableName="Department">
+            <column name="Id" type="int" autoIncrement="true">
+            <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="Name" type="varchar(255)">
+            <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <createTable tableName="TimeCategory">
+            <column name="Id" type="int" autoIncrement="true">
+            <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="Name" type="varchar(255)">
+            <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <createTable tableName="CoWorker">
+            <column name="Id" type="int" autoIncrement="true">
+            <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="Name" type="varchar(255)">
+            <constraints nullable="false"/>
+            </column>
+            <column name="Department_id" type="int" references >
+            <constraints nullable="false" foreignKeyName="fk_coworker_department" references="Department(Id)"/>
+            </column>
+        </createTable>
+        <createTable tableName="Registration">
+            <column name="Id" type="int" autoIncrement="true">
+            <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="Arrivetime" type="DATETIME">
+            <constraints nullable="false"/>
+            </column>
+            <column name="Leavetime" type="DATETIME">
+            <constraints nullable="false"/>
+            </column>
+            <column name="TimeCategory_id" type="int" references >
+            <constraints nullable="false" foreignKeyName="fk_registration_timecategory" references="TimeCategory(Id)"/>
+            </column>
+            <column name="CoWorker_id" type="int" references >
+            <constraints nullable="false" foreignKeyName="fk__registration_coworker" references="CoWorker(Id)"/>
+            </column>
+        </createTable>
+        <createTable tableName="CoWorkerProperties">
+            <column name="Id" type="int" autoIncrement="true">
+            <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="Fixedarrivetime" type="DATETIME">
+            <constraints nullable="false"/>
+            </column>
+            <column name="Fixedleavetime" type="DATETIME">
+            <constraints nullable="false"/>
+            </column>
+            <column name="Fixedtimemin" type="int">
+            <constraints nullable="false"/>
+            </column>
+            <column name="Fixedtimemax" type="int">
+            <constraints nullable="false"/>
+            </column>
+            <column name="Overtimerate" type="int">
+            <constraints nullable="false"/>
+            </column>
+            <column name="CoWorker_id" type="int" references >
+            <constraints nullable="false" foreignKeyName="fk__coworkerproperties_coworker" references="CoWorker(Id)"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog> 
