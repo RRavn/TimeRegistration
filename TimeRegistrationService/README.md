@@ -100,4 +100,4 @@ Tools used Spring Boot, Swagger, LiquiBase, JPA, Jaxb and Java 11.
 
 #### Java objekt model
 
-![Java object model https://github.com/RRavn/TimeRegistration/blob/master/TimeRegistrationService/doc/TimeRegistrationServiceModel.png](TimeRegistrationService/doc/TimeRegistrationServiceModel.png)
+![Java object model](https://raw.githubusercontent.com/RRavn/TimeRegistration/master/TimeRegistrationService/doc/TimeRegistrationServiceModel.png)
