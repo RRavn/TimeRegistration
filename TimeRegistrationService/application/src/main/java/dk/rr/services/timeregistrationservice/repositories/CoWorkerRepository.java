@@ -15,9 +15,5 @@ import javax.transaction.Transactional;
 public interface CoWorkerRepository extends JpaRepository<CoWorker, Long> {
     public Optional<CoWorker> findDistinctByName(String name);
 
-    public List<CoWorker> findAll();
-
-    public Optional<CoWorker> findById(Long id);
-
     public void deleteById(Long id);
 }

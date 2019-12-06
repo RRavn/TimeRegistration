@@ -2,21 +2,16 @@
 
 Service to register working time, get some simple statistik and info. But have a look on the API.
 
-## Goal
-The goal for this part is to show my coding skills on a Docker service TimeRegistrationService based on a Microsoft SQLServer Docker image. 
-The result should be a Docker service with an API with REST, SOAP, ActiveMQ consumer/producer endpoints. 
-Tools used Spring Boot, Swagger, LiquiBase, JPA, Jaxb and Java 11.
-
-## Status on the project:
-1. API not fully implemented yet
-2. Unit tests missing
-3. For now it's really just a service with a RPC interface not a real REST Service
-4. SOAP interface is missing
-5. ActiveMQ consumers/producers are missing
-6. How to run the service documentation here in the README.md file 
-
-
 ## Documentation
+
+### Project used libraries
+Spring Boot, LiquiBase, Swagger, JPA, REST Controller, HATEOAS, Microsoft SQLServer database, H2 inmemory database and Docker
+
+### Running the project
+1. ./build.sh
+2. ./run_db.sh
+3. ./run.sh  (if you wan't to run it outside a Docker container you have to change the configuration application-local.yml spring.datasource.url has to point to localhost instead of the Docker router 172.17.0.1)
+4. in browser open http://localhost:8080
 
 ### Short user stories
 #### Employers needs

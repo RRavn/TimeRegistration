@@ -17,7 +17,7 @@ public class TimeCategory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "Id")
-    private long id;
+    private Long id;
     @NotNull
     @Column(name = "Name")
     private String name;
@@ -25,7 +25,7 @@ public class TimeCategory {
     TimeCategory(Long id) {
         this.id = id;
     }
-    
+
     TimeCategory(String name) {
         this.name = name;
     }

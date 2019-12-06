@@ -1,6 +1,6 @@
 package dk.rr.services.timeregistrationservice.models;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -22,10 +22,10 @@ public class Registration {
     private Long id;
     @NotNull
     @Column(name = "Arrivetime")
-    private Date arriveTime;
+    private Timestamp arriveTime;
     @NotNull
     @Column(name = "Leavetime")
-    private Date leaveTime;
+    private Timestamp leaveTime;
     @NotNull
     @ManyToOne
     @JoinColumn(name = "Timecategory_id")
@@ -33,12 +33,12 @@ public class Registration {
     @NotNull
     @ManyToOne
     @JoinColumn(name = "Coworker_id")
-    private CoWorker coWorker;
+    private CoWorker coworker;
 
-    Registration(Date arriveTime, Date leaveTime, TimeCategory timeCategory, CoWorker coWorker) {
+    Registration(Timestamp arriveTime, Timestamp leaveTime, TimeCategory timeCategory, CoWorker coWorker) {
         this.arriveTime = arriveTime;
         this.leaveTime = leaveTime;
         this.timeCategory = timeCategory;
-        this.coWorker = coWorker;
+        this.coworker = coWorker;
     }
 }

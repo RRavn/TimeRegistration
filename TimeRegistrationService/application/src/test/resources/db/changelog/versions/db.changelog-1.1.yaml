@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: rr
+      changes:
+        - insert:
+            tableName: Department
+            columns:
+              - column:
+                  name: Name
+                  value: "IT"
+        - insert:
+            tableName: Department
+            columns:
+              - column:
+                  name: Name
+                  value: "HR"
+        - insert:
+            tableName: Department
+            columns:
+              - column:
+                  name: Name
+                  value: "Logistik"
+        - insert:
+            tableName: TimeCategory
+            columns:
+              - column:
+                  name: Name
+                  value: "Normal"
+        - insert:
+            tableName: TimeCategory
+            columns:
+              - column:
+                  name: Name
+                  value: "Overarbejde udbetalt"
+        - insert:
+            tableName: TimeCategory
+            columns:
+              - column:
+                  name: Name
+                  value: "Overarbejde afspadsering"

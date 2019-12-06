@@ -1,8 +1,10 @@
 package dk.rr.services.timeregistrationservice.services;
 
+import dk.rr.services.timeregistrationservice.exceptions.NotFoundException;
 import dk.rr.services.timeregistrationservice.models.CoWorker;
 import dk.rr.services.timeregistrationservice.repositories.CoWorkerRepository;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -16,23 +18,28 @@ public class CoWorkerService {
         this.coWorkerRepository = coWorkerRepository;
     }
 
-    public List<CoWorker> getCoWorkers() {
+    public List<CoWorker> getAll() {
         return coWorkerRepository.findAll();
     }
 
-    public CoWorker saveCoWorker(CoWorker coWorker) {
+    public CoWorker save(CoWorker coWorker) {
         return coWorkerRepository.save(coWorker);
     }
 
-    public Optional<CoWorker> getCoWorkerById(Long id) {
+    public Optional<CoWorker> getById(Long id) {
         return coWorkerRepository.findById(id);
     }
 
-    public Optional<CoWorker> getCoWorkerByName(String name) {
+    public Optional<CoWorker> getByName(String name) {
         return coWorkerRepository.findDistinctByName(name);
     }
 
-    public void deleteCoWorkerById(Long id) {
-        coWorkerRepository.deleteById(id);
+    public void delete(Long id) throws NotFoundException {
+        try {
+            coWorkerRepository.deleteById(id);
+        } catch(EmptyResultDataAccessException e) {
+            log.error("Id {} not found", id, e);
+            throw new NotFoundException(e.getMessage());
+        }
     }
 }

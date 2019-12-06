@@ -1,8 +1,10 @@
 package dk.rr.services.timeregistrationservice.services;
 
+import dk.rr.services.timeregistrationservice.exceptions.NotFoundException;
 import dk.rr.services.timeregistrationservice.models.TimeCategory;
 import dk.rr.services.timeregistrationservice.repositories.TimeCategoryRepository;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -16,19 +18,24 @@ public class TimeCategoryService {
         this.timeCategoryRepository = timeCategoryRepository;
     }
 
-    public List<TimeCategory> getTimeCategorys() {
+    public List<TimeCategory> getAll() {
         return timeCategoryRepository.findAll();
     }
 
-    public TimeCategory saveTimeCategory(TimeCategory timeCategory) {
+    public TimeCategory save(TimeCategory timeCategory) {
         return timeCategoryRepository.save(timeCategory);
     }
 
-    public Optional<TimeCategory> getTimeCategoryById(Long id) {
+    public Optional<TimeCategory> getById(Long id) {
         return timeCategoryRepository.findById(id);
     }
 
-    public void deleteTimeCategoryById(Long id) {
-        timeCategoryRepository.deleteById(id);
+    public void delete(Long id) throws NotFoundException {
+        try {
+            timeCategoryRepository.deleteById(id);
+        } catch(EmptyResultDataAccessException e) {
+            log.error("Id {} not found", id, e);
+            throw new NotFoundException(e.getMessage());
+        }
     }
 }

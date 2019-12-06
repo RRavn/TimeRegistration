@@ -11,11 +11,5 @@ import java.util.Optional;
 @Repository
 @Transactional
 public interface TimeCategoryRepository extends JpaRepository<TimeCategory, Long> {
-    public Optional<TimeCategory> findDistinctByName(String name);
-
-    public List<TimeCategory> findAllByName(String name);
-
-    public Optional<TimeCategory> findById(Long id);
-
     public void deleteById(Long id);
 }
