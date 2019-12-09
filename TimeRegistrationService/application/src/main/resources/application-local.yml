@@ -1,7 +1,7 @@
 # Local development configuration
 spring:
   datasource:
-    url: "jdbc:sqlserver://172.17.0.1:1433;databaseName=timeregistration"
+    url: "jdbc:sqlserver://172.17.0.1:1433;loginTimeout=90;databaseName=msdb"
     driver-class-name: "com.microsoft.sqlserver.jdbc.SQLServerDriver"
     username: "sa"
     password: "passW0rd"

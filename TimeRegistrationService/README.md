@@ -8,10 +8,8 @@ Service to register working time, get some simple statistik and info. But have a
 Spring Boot, LiquiBase, Swagger, JPA, REST Controller, HATEOAS, Microsoft SQLServer database, H2 inmemory database and Docker
 
 ### Running the project
-1. ./build.sh
-2. ./run_db.sh
-3. ./run.sh  (if you wan't to run it outside a Docker container you have to change the configuration application-local.yml spring.datasource.url has to point to localhost instead of the Docker router 172.17.0.1)
-4. in browser open http://localhost:8080
+1. docker-compose up --build (if you wan't to run it outside a Docker container you have to change the configuration application-local.yml spring.datasource.url has to point to localhost instead of the Docker router 172.17.0.1)
+2. in browser open http://localhost:8080/swagger-ui.html
 
 ### Short user stories
 #### Employers needs
