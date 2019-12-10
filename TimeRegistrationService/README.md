@@ -1,6 +1,6 @@
 # TimeRegistrationService
 
-Service to register working time, get some simple statistik and info. But have a look on the API.
+Service to register working time, get some simple statistik and info.
 
 ## Documentation
 
