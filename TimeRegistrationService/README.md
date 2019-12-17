@@ -8,8 +8,11 @@ Service to register working time, get some simple statistik and info.
 Spring Boot, LiquiBase, Swagger, JPA, REST Controller, HATEOAS, Microsoft SQLServer database, H2 inmemory database and Docker
 
 ### Running the project
-1. docker-compose up --build (if you wan't to run it outside a Docker container you have to change the configuration application-local.yml spring.datasource.url has to point to localhost instead of the Docker router 172.17.0.1)
+1. docker-compose up --build (if you want to run it outside a Docker container you have to change the configuration application-local.yml spring.datasource.url has to point to localhost instead of the Docker router 172.17.0.1)
 2. in browser open http://localhost:8080/swagger-ui.html
+
+Docker-compose runs a Microsoft SQLServer 2017 express in a Docker container and the TimeRegistrationService in another Docker container.
+For unit testing it will start a H2 inmemory database.
 
 ### Short user stories
 #### Employers needs
