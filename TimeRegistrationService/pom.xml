@@ -35,6 +35,8 @@
 		<swagger-annotations.version>1.5.15</swagger-annotations.version>
 		<swagger-maven-plugin.version>3.1.8</swagger-maven-plugin.version>
 		<swagger-codegen-maven-plugin.version>2.3.1</swagger-codegen-maven-plugin.version>
+		<oauth.version>2.3.8.RELEASE</oauth.version>
+		<oauth-autoconfig.version>2.1.11.RELEASE</oauth-autoconfig.version>
 	</properties>
 
 	<dependencyManagement>

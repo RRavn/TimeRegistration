@@ -1,0 +1,389 @@
+{
+  "id": "7e5c1e22-1c59-43d0-a672-9d413cf030ee",
+  "version": "2.0",
+  "name": "TimeRegistrationService",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "dda6c309-d23c-4cff-9d4c-c7d11a0d827c",
+    "name": "GET_Tests",
+    "commands": [{
+      "id": "a16595ac-daf2-4651-89f4-74b35cfdfaa5",
+      "comment": "",
+      "command": "open",
+      "target": "/swagger-ui.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "feba390a-80ed-4f05-ac6f-36cb5bf0ca48",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x955",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8d30fdb-c7ea-4db2-aad5-79715154592a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#operations-tag-timeregistration span",
+      "targets": [
+        ["css=#operations-tag-timeregistration span", "css:finder"],
+        ["xpath=//h4[@id='operations-tag-timeregistration']/a/span", "xpath:idRelative"],
+        ["xpath=//span[4]/div/h4/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a0c2865-372e-44e1-9a49-7ab6963bef3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#operations-timeregistration-getCoWorkersUsingGET .opblock-summary-method",
+      "targets": [
+        ["css=#operations-timeregistration-getCoWorkersUsingGET .opblock-summary-method", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getCoWorkersUsingGET']/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/span/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8aa10492-7b7d-4459-a561-cdab191e0251",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getCoWorkersUsingGET']/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Try it out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27167b26-9dfa-407b-9a42-1142d67935a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.execute",
+      "targets": [
+        ["css=.execute", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getCoWorkersUsingGET']/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Execute')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca0c1dd0-983a-4072-9804-cd4bd51ecc5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET .opblock-summary-path span",
+      "targets": [
+        ["css=#operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET .opblock-summary-path span", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET']/div/span[2]/a/span", "xpath:idRelative"],
+        ["xpath=//span[11]/div/div/span[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb9111e8-48c9-46aa-a8d4-6651a8ddec1e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET .opblock-summary-path span",
+      "targets": [
+        ["css=#operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET .opblock-summary-path span", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET']/div/span[2]/a/span", "xpath:idRelative"],
+        ["xpath=//span[11]/div/div/span[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efb8faf1-44cb-4d42-a5bf-fc599693286a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET .opblock-summary-path span",
+      "targets": [
+        ["css=#operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET .opblock-summary-path span", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET']/div/span[2]/a/span", "xpath:idRelative"],
+        ["xpath=//span[11]/div/div/span[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d47b25c7-b747-4f8d-9daa-bfb8079af298",
+      "comment": "",
+      "command": "click",
+      "target": "css=#operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET .btn",
+      "targets": [
+        ["css=#operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET']/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[11]/div/div[2]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Try it out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04082860-2ab0-40b2-bd77-7a43fbd72456",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET']/div[2]/div/div/div[2]/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1421f20-fa3a-4a01-9007-e678812ae542",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='1']", "xpath:attributes"],
+        ["xpath=//div[@id='operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET']/div[2]/div/div/div[2]/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "8c543b65-ba57-4911-9757-915e7838ab30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.execute-wrapper > .btn",
+      "targets": [
+        ["css=.execute-wrapper > .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getCoWorkerByCoWorkerIdUsingGET']/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[11]/div/div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00491600-fe58-4948-9c93-c889ff2de2be",
+      "comment": "",
+      "command": "click",
+      "target": "css=#operations-timeregistration-getDepartmentsUsingGET .opblock-summary-path span",
+      "targets": [
+        ["css=#operations-timeregistration-getDepartmentsUsingGET .opblock-summary-path span", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getDepartmentsUsingGET']/div/span[2]/a/span", "xpath:idRelative"],
+        ["xpath=//span[13]/div/div/span[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cf7b58e-0dc2-4889-89c5-362673085d8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#operations-timeregistration-getDepartmentsUsingGET .btn",
+      "targets": [
+        ["css=#operations-timeregistration-getDepartmentsUsingGET .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getDepartmentsUsingGET']/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[13]/div/div[2]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Try it out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43e5737d-68b8-48b7-a75f-02baa8db4949",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#operations-timeregistration-getDepartmentsUsingGET .btn",
+      "targets": [
+        ["css=#operations-timeregistration-getDepartmentsUsingGET .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getDepartmentsUsingGET']/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[13]/div/div[2]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Try it out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c26316a-09fd-4e87-b2e1-5de0ca0ec9ca",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#operations-timeregistration-getDepartmentsUsingGET .opblock-section .btn",
+      "targets": [
+        ["css=#operations-timeregistration-getDepartmentsUsingGET .opblock-section .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getDepartmentsUsingGET']/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[13]/div/div[2]/div/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a02d48d4-cec7-426e-87e2-3cf25ddf05f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.execute-wrapper > .btn",
+      "targets": [
+        ["css=.execute-wrapper > .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getDepartmentsUsingGET']/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[13]/div/div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "653ce38c-6fd3-40df-a387-e1b9baa32bde",
+      "comment": "",
+      "command": "click",
+      "target": "css=#operations-timeregistration-getDepartmentByIdUsingGET .opblock-summary-description",
+      "targets": [
+        ["css=#operations-timeregistration-getDepartmentByIdUsingGET .opblock-summary-description", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getDepartmentByIdUsingGET']/div/div", "xpath:idRelative"],
+        ["xpath=//span[17]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b91833cc-0a0a-429f-b16b-e859f74fd9a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#operations-timeregistration-getDepartmentByIdUsingGET .btn",
+      "targets": [
+        ["css=#operations-timeregistration-getDepartmentByIdUsingGET .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getDepartmentByIdUsingGET']/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[17]/div/div[2]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Try it out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7473df99-f049-4912-b308-ecd2fc20c6c3",
+      "comment": "",
+      "command": "type",
+      "target": "css=#operations-timeregistration-getDepartmentByIdUsingGET input",
+      "targets": [
+        ["css=#operations-timeregistration-getDepartmentByIdUsingGET input", "css:finder"],
+        ["xpath=//input[@value='2']", "xpath:attributes"],
+        ["xpath=//div[@id='operations-timeregistration-getDepartmentByIdUsingGET']/div[2]/div/div/div[2]/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//span[17]/div/div[2]/div/div/div[2]/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "2"
+    }, {
+      "id": "bded0ff8-b650-4a50-bbae-2cebaaba5f12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.execute-wrapper > .btn",
+      "targets": [
+        ["css=.execute-wrapper > .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getDepartmentByIdUsingGET']/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[17]/div/div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79e36ce8-2f45-43ef-88b7-a515f6c894fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=#operations-timeregistration-getRegistrationsUsingGET .opblock-summary-description",
+      "targets": [
+        ["css=#operations-timeregistration-getRegistrationsUsingGET .opblock-summary-description", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getRegistrationsUsingGET']/div/div", "xpath:idRelative"],
+        ["xpath=//span[18]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9046a109-5a1d-4f9e-9677-88f99e2f0a9a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#operations-timeregistration-getRegistrationsUsingGET .btn",
+      "targets": [
+        ["css=#operations-timeregistration-getRegistrationsUsingGET .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getRegistrationsUsingGET']/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[18]/div/div[2]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Try it out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "942fd61f-d546-4d42-a98f-853682c9aba7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#operations-timeregistration-getRegistrationsUsingGET .btn",
+      "targets": [
+        ["css=#operations-timeregistration-getRegistrationsUsingGET .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getRegistrationsUsingGET']/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[18]/div/div[2]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Try it out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98f227b9-c2f5-4e34-b5ee-99bb40636f59",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#operations-timeregistration-getRegistrationsUsingGET .opblock-section .btn",
+      "targets": [
+        ["css=#operations-timeregistration-getRegistrationsUsingGET .opblock-section .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getRegistrationsUsingGET']/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[18]/div/div[2]/div/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c292bcbf-3688-4272-a80f-c6654dc74380",
+      "comment": "",
+      "command": "click",
+      "target": "css=.execute-wrapper > .btn",
+      "targets": [
+        ["css=.execute-wrapper > .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getRegistrationsUsingGET']/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[18]/div/div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69099ca4-b4d3-478a-b53f-b33754c127bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#operations-timeregistration-getTimeCategorysUsingGET .opblock-summary-description",
+      "targets": [
+        ["css=#operations-timeregistration-getTimeCategorysUsingGET .opblock-summary-description", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getTimeCategorysUsingGET']/div/div", "xpath:idRelative"],
+        ["xpath=//span[27]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49d16d2c-d6a1-4e81-9545-621a16ea9090",
+      "comment": "",
+      "command": "click",
+      "target": "css=#operations-timeregistration-getTimeCategorysUsingGET .btn",
+      "targets": [
+        ["css=#operations-timeregistration-getTimeCategorysUsingGET .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getTimeCategorysUsingGET']/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[27]/div/div[2]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Try it out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "02bc9ca6-850c-4952-a955-690bab9a7512",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#operations-timeregistration-getTimeCategorysUsingGET .btn",
+      "targets": [
+        ["css=#operations-timeregistration-getTimeCategorysUsingGET .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getTimeCategorysUsingGET']/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[27]/div/div[2]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Try it out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d05c06bd-5469-4257-8bea-ec5e99f2cad9",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#operations-timeregistration-getTimeCategorysUsingGET .opblock-section .btn",
+      "targets": [
+        ["css=#operations-timeregistration-getTimeCategorysUsingGET .opblock-section .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getTimeCategorysUsingGET']/div[2]/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[27]/div/div[2]/div/div/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b602166e-1e28-463d-82d6-f2df6ca573d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.execute-wrapper > .btn",
+      "targets": [
+        ["css=.execute-wrapper > .btn", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getTimeCategorysUsingGET']/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[27]/div/div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2636d1cc-2084-48a3-97fc-4fcadfa9e76c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#operations-timeregistration-getTimeCategorysUsingGET .execute",
+      "targets": [
+        ["css=#operations-timeregistration-getTimeCategorysUsingGET .execute", "css:finder"],
+        ["xpath=//div[@id='operations-timeregistration-getTimeCategorysUsingGET']/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//span[27]/div/div[2]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e03bc0f5-91dc-46be-b705-08fb749cb2e6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dda6c309-d23c-4cff-9d4c-c7d11a0d827c"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
